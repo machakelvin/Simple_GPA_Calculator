@@ -1,1 +1,59 @@
+ <html>
+ <head>
+ <title>machakelvin</title>
+ <link rel="stylesheet" href="me.css">
+ </head>
+ 
+  <body>
+  <div class="machaBahati">
+        <h1>GPA CALCULATOR</h1>
+       
 
+        <div id="course-wrapper">
+          <form class="key-0">
+            <p> <label id="course-row" for="courses">Courses:</label> 
+             <label id="credit-row" for="credit-units">Credit Units:</label>
+           <label id="grade-row" for="macha">Grades: </label> </p>
+              <input
+                type="text"
+                placeholder="Course Code"
+                class="courses key-0"
+                required/>
+
+
+              <input
+                type="number"
+                class="credit-units key-0"
+                placeholder="Credit Units"
+                value=""
+                required
+              />
+
+
+              <select class="grade key-0" required>
+                <option class="macha" value="select">Select</option>
+                <option class="macha" value="5">A</option>
+                <option class="macha" value="4">B+</option>
+                <option class="macha" value="3">B</option>
+                <option class="macha" value="2">C</option>
+                <option class="macha" value="1">D</option>
+                <option class="macha" value="0">E</option>
+              </select>
+          </form>
+        </div>
+  
+
+
+        <div class="btn">
+          <button onclick="addCourse()">+ Add Course</button>
+          <button onclick="removeCourse()">- Remove Course</button>
+          <button onclick="calcGpa()">Calculate CGPA</button>
+        </div>
+        <div class="lastp">
+          <p id="gpa-calc">Your GPA is: </p>
+        </div>
+      </div>
+      <script src="me.js"></script>
+      </body>
+      </html>
+    
